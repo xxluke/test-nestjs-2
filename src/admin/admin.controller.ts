@@ -12,9 +12,9 @@ export class AdminController {
 
     @Get()
     public dashboard() {
-        if (!this.authenticationAdapter.isAdmin()) {
-            return 'Not admin';
-        }
+        // if (!this.authenticationAdapter.isAdmin()) {
+        //     return 'Not admin';
+        // }
         return `Dashboard of ${this.userService.getUserName()}`;
     }
 }
